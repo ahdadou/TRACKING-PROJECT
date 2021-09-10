@@ -1,0 +1,205 @@
+:host {
+  --main-color: #FC6E20;
+  --color-1: #323232;
+  --color-2: #FFE7D0;
+  --color-3: #1B1B1B;
+  --bg-dark: #2b2c2f;
+  --main-to-dark-color: var(--main-color);
+  --dark-to-dark-color: var(--bg-dark);
+  --shadow-black-100: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --shadow-black-300: 0 5px 15px rgba(226, 149, 86, 0.3);
+  --black-900: #000000;
+  --black-400: #555555;
+  --black-100: #f7f7f7;
+  --black-000: #ffffff;
+  --black-alpha-100: rgba(0, 0, 0, 0.05);
+}
+
+
+
+ul li {
+  list-style: none;
+}
+
+
+
+
+
+
+/* RESPONSIVE */
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+
+/* NAVBAR */
+
+header {
+  background-color: white;
+  box-shadow: var(--shadow-black-100);
+  // height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  nav {
+
+   
+    ul{
+      margin-top: 13px;
+    }
+
+    .navbar-brand {
+      color: var(--color-1);
+      font-size: 20px;
+      font-weight: bold;
+      text-transform: capitalize;
+      letter-spacing: 2px;
+      
+
+      span {
+        color: var(--main-color);
+      }
+    }
+
+    .nav-item {
+      margin: 0px 10px 0;
+      color: #555555;
+
+    }
+
+
+    
+
+    .diveder {
+      width: 2px;
+      background-color: #c5c2c2;
+      height: 23px;
+      margin: 0 10px;
+    }
+
+
+    .user_info span {
+      font-weight: bold;
+      font-size: 13px;
+      /* font-weight: 600; */
+      /* font-family: Arial, Helvetica, sans-serif; */
+      /* font-size: 14px; */
+      margin: 0 10px;
+    }
+
+    .nav_ions,
+    .user_info {
+      justify-content: center;
+      align-items: center;
+    }
+
+    .user_image {
+      // margin: 0 10px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      // border: 2px solid #c5c2c2;
+      position: relative;
+      z-index: 1;
+    }
+
+    .user_image img {
+      z-index: -1;
+      border-radius: 50%;
+      width: 100%;
+      height: 100%;
+
+    }
+
+    .nav_ions {
+      li{
+        cursor: pointer;
+      }
+      h3 {
+        display: block;
+        color: #333;
+        background: #FFF;
+        font-weight: bold;
+        font-size: 13px;
+        padding: 8px;
+        margin: 0;
+        border-bottom: solid 1px rgba(100, 100, 100, .30);
+      }
+
+      .nav-item {
+        
+        position: relative;
+
+        /* width: 30px; */
+        /* height: 30px; */
+        .notify {
+          color: white;
+          font-weight: bold;
+          font-size: 10px;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          position: absolute;
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          background-color: red;
+          top: -5px;
+          right: -5px;
+        }
+      }
+
+      #notifications {
+        display: none;
+        width: 430px;
+        position: absolute;
+        top: 30px;
+        left: 0;
+        background: #FFF;
+        border: solid 1px rgba(100, 100, 100, .20);
+        -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .20);
+        z-index: 0;
+
+        &:before {
+          content: '';
+          display: block;
+          width: 0;
+          height: 0;
+          color: transparent;
+          border: 10px solid rgb(92, 91, 91);
+          border-color: transparent transparent rgb(253, 252, 252);
+          margin-top: -20px;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* THE NOTIFICAIONS WINDOW. THIS REMAINS HIDDEN WHEN THE PAGE LOADS. */
+
+
+/* AN ARROW LIKE STRUCTURE JUST OVER THE NOTIFICATIONS WINDOW */

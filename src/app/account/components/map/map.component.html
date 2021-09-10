@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="mt-5 mb-2">
+        <div class="row">
+            <div class="col-8">
+                <input type="text" [(ngModel)]="trackId" name="trackId">
+            </div>
+            <div class="col-2 mr-0">
+                <button class="btn-track" (click)="track()">TRACK</button>
+            </div>
+            <div class="col-2 mr-0 ml-2">
+                <button class="btn-cancel" (click)="cancel()">CANCEL</button>
+            </div>
+
+        </div>
+    </div>
+    <div class="full" id="map">
+    </div>
+
+
+</div>

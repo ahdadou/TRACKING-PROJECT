@@ -1,0 +1,155 @@
+
+/* PROFILE BODY */
+
+.section-home {
+    background-color: #e7e7e7;
+    height: auto;
+    padding: 50px 0;
+  
+  }
+  
+  .card{
+    min-height: 90vh;
+  }
+
+  .border-right{
+    min-height: 90vh;
+    border-right:  1px solid rgb(241, 239, 239) ;
+  }
+  .section-home .filter {
+    margin: 80px 0 0 0;
+    /* width: 300px; */
+    height: 500px;
+    background-color: white;
+    border-radius: 10px;
+  }
+  
+  .section-home .body {
+    margin: 80px 0 0 50px;
+    width: 300px;
+    height: 1000px;
+    background-color: white;
+    border-radius: 10px;
+  
+  }
+  
+  .rating .check {
+    background-color: #fff;
+    border: 1px solid #666;
+    top: 0
+  }
+  
+  .rating .tick {
+    font-size: 0.9rem;
+    padding-left: 25px
+  }
+  
+  .rating .fas.fa-star {
+    color: #ffbb00;
+    padding: 0px 3px
+  }
+  
+  .brand .tick:hover input~.check,
+  .rating .tick:hover input~.check {
+    background-color: #f9f9f9
+  }
+  
+  .brand .tick input:checked~.check,
+  .rating .tick input:checked~.check {
+    background-color: #61b15a
+  }
+  
+  .welcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .checkbox label {
+    display: block;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 0
+  }
+  
+  .checkbox {
+    margin: 0 10px 0 0;
+    cursor: pointer;
+    height: 18px;
+    width: 18px;
+  
+  }
+  
+  .custom-select {
+    margin: 5px 5px;
+  }
+  
+  .btn.filter{
+    padding: 20px 20px;
+    background-color: var(--main-color);
+    color: white;
+    font-weight: bold;
+    height: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  
+  /* CHAT */
+  
+  
+  
+  
+  body{margin-top:20px;}
+  
+  .chat-online {
+      color: #34ce57
+  }
+  
+  .chat-offline {
+      color: #e4606d
+  }
+  
+  .chat-messages {
+      display: flex;
+      flex-direction: column;
+      max-height: 800px;
+      overflow-y: scroll
+  }
+  
+  .chat-message-left,
+  .chat-message-right {
+      display: flex;
+      flex-shrink: 0
+  }
+  
+  .chat-message-left {
+      margin-right: auto
+  }
+  
+  .chat-message-right {
+      flex-direction: row-reverse;
+      margin-left: auto
+  }
+  .py-3 {
+      padding-top: 1rem!important;
+      padding-bottom: 1rem!important;
+  }
+  .px-4 {
+      padding-right: 1.5rem!important;
+      padding-left: 1.5rem!important;
+  }
+  .flex-grow-0 {
+      flex-grow: 0!important;
+  }
+  .border-top {
+      border-top: 1px solid #dee2e6!important;
+  }
+  .chat{
+    .chat-messages{
+
+      height: 500px;
+    }
+  }

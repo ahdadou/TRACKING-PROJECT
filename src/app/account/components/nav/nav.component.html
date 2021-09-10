@@ -1,0 +1,43 @@
+<header class="section-padding fixed-top">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <a class="navbar-brand" routerLink="/acc">PIGEON<span>MAN.</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    
+                    <ul class="nav_ions d-flex ms-auto">
+                        <li class="nav-item line " routerLink="map">
+                            <i class="fas fa-map-marked"></i>
+                        </li>
+                        <li class="nav-item line " routerLink="notifications">
+                            <div *ngIf="reviewNotification" class="notify notify-chat">!</div>
+                            <i class="fas fa-bell"></i>
+
+                        </li>
+                        <li class="nav-item line" routerLink="inbox/-1">
+                            <div *ngIf="chatNotification" class="notify notify-chat">!</div>
+                            <i class="fas fa-comment-alt"></i>
+                        </li>
+                        <li class="nav-item line" (click)="signout()">
+                            <i class="fas fa-sign-out-alt"></i>
+                        </li>
+                        <li class="diveder"></li>
+                        <li class="user_info d-flex" routerLink="profile/-1">
+                            <span>{{currentUser.firstname}} {{currentUser.lastname}}</span>
+                           
+                            <div class="user_image">
+                                <img src="{{currentUser.image==null ? '../../../../assets/img/images.png': currentUser.image }}" alt="" width="40" >
+                            </div>
+                        </li>
+                       
+                    </ul>
+                   
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
